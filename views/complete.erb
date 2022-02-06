@@ -73,31 +73,31 @@
         <tr>
             <th>1</th>
             <td>会社名</td>
-            <td><%= company %></td>
+            <td><%= company.gsub(/\r\n|\r|\n/, "<br>") %></td>
             
         </tr>
         <tr>
             <th>2</th>
             <td>氏名</td>
-            <td><%= name %></td>
+            <td><%= name.gsub(/\r\n|\r|\n/, "<br>")%></td>
           
         </tr>
         <tr>
             <th>3</th>
             <td>メール</td>
-            <td><%= mail %></td>
+            <td><%= mail.gsub(/\r\n|\r|\n/, "<br>")%></td>
          
         </tr>
       <tr>
             <th>４</th>
             <td>電話番号</td>
-            <td><%= tel %></td>
+            <td><%= tel.gsub(/\r\n|\r|\n/, "<br>") %></td>
          
         </tr>
       <tr>
             <th>５</th>
             <td>内容</td>
-            <td><%= content %></td>
+            <td><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td>
          
         </tr>
     </tbody>
